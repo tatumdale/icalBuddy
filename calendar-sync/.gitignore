@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local environment file
+.env
+
+# OAuth + runtime state (never commit these)
+credentials.json
+token.json
+sync_state.json
+sync.log
+launchd.log
+launchd_error.log
+
+# macOS
+.DS_Store

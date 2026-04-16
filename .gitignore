@@ -36,3 +36,22 @@ tests/regression/*.log
 # other
 deploymentScpTarget
 .hg*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# calendar-sync runtime (never commit)
+calendar-sync/.env
+calendar-sync/credentials.json
+calendar-sync/token.json
+calendar-sync/sync_state.json
+calendar-sync/*.log
+
+# Packaging build output
+build/
+dist/
+*.dmg

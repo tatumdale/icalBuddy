@@ -1,0 +1,46 @@
+name: Build DMG
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install icalBuddy via Homebrew
+        run: brew install ical-buddy
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build CalendarSync.app
+        run: ./packaging/build_app.sh
+
+      - name: Optional ad-hoc codesign
+        run: |
+          codesign --force --deep --sign - \
+            --entitlements packaging/entitlements.plist \
+            calendar-sync/dist/CalendarSync.app
+
+      - name: Build DMG
+        run: ./packaging/build_dmg.sh
+
+      - name: Upload DMG artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: CalendarSync-dmg
+          path: calendar-sync/dist/CalendarSync.dmg
+
+      - name: Attach DMG to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: calendar-sync/dist/CalendarSync.dmg
