@@ -16,6 +16,7 @@ DATA_FILES = [
 ]
 
 OPTIONS = {
+    "iconfile": "resources/CalendarSync.icns",
     "argv_emulation": False,
     "includes": [
         "flask",
