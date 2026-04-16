@@ -13,8 +13,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install icalBuddy via Homebrew
-        run: brew install ical-buddy
+      - name: Install dependencies via Homebrew
+        run: brew install ical-buddy create-dmg
 
       - name: Set up Python
         uses: actions/setup-python@v5

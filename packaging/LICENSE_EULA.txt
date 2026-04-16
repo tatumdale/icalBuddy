@@ -1,0 +1,106 @@
+CalendarSync — End-User Licence Agreement
+
+Version 1.0 — Effective 16 April 2026
+
+IMPORTANT — PLEASE READ CAREFULLY BEFORE INSTALLING OR USING THIS SOFTWARE.
+
+By installing, copying or otherwise using CalendarSync ("the Software") you
+agree to be bound by the terms of this licence. If you do not agree, do not
+install or use the Software.
+
+
+1. LICENCE GRANT
+
+The Software is provided under the MIT Licence reproduced below. You are
+free to use, copy, modify, merge, publish, distribute, sublicence and/or
+sell copies of the Software, subject to the conditions set out in that
+licence.
+
+
+2. MIT LICENCE
+
+Copyright (c) 2026 Tatum Dale
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+
+3. DISCLAIMER OF WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+
+To the maximum extent permitted by applicable law — including the laws of
+England and Wales, Scotland, the United States and any state thereof — the
+authors and copyright holders disclaim all warranties, whether statutory,
+express or implied.
+
+Nothing in this agreement is intended to limit or exclude any rights that
+cannot lawfully be limited or excluded, including but not limited to
+statutory consumer rights under the Consumer Rights Act 2015 (United
+Kingdom) or equivalent legislation in your jurisdiction.
+
+
+4. LIMITATION OF LIABILITY
+
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+To the extent permitted by applicable law, the total aggregate liability of
+the authors and copyright holders arising out of or in connection with the
+Software shall not exceed the amount you paid for the Software (if any).
+
+Nothing in this agreement limits liability for (a) death or personal injury
+caused by negligence, (b) fraud or fraudulent misrepresentation, or (c) any
+other liability that cannot lawfully be limited or excluded.
+
+
+5. THIRD-PARTY SERVICES
+
+The Software interacts with Google Calendar via the Google Calendar API.
+Your use of Google services is subject to Google's own terms of service and
+privacy policy. The authors of CalendarSync are not responsible for the
+availability, accuracy or operation of any third-party service.
+
+
+6. DATA AND PRIVACY
+
+The Software stores OAuth tokens and calendar data locally on your device.
+No personal data is transmitted to the authors of CalendarSync. You are
+responsible for safeguarding your own credentials and tokens.
+
+
+7. SUPPORT
+
+The Software is provided without any obligation of support or maintenance.
+If you have questions or require assistance you may contact:
+
+    support@tatumdale.com
+
+Support is provided on a reasonable-efforts basis and does not create any
+contractual obligation beyond the terms of this licence.
+
+
+8. GOVERNING LAW
+
+If you are resident in the United Kingdom, this agreement shall be governed
+by and construed in accordance with the laws of England and Wales, and the
+courts of England and Wales shall have non-exclusive jurisdiction.
+
+If you are resident in the United States, this agreement shall be governed by
+and construed in accordance with the laws of the State of California,
+without regard to its conflict-of-law provisions, and the federal and state
+courts located in California shall have non-exclusive jurisdiction.
+
+For residents of any other jurisdiction, the applicable local law shall
+govern to the extent required by mandatory provisions of that law.

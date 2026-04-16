@@ -7,9 +7,10 @@ Distributed as a DMG — drag to Applications, launch, and macOS will prompt for
 ## Install (end users)
 
 1. Download **CalendarSync.dmg** from the [latest release](https://github.com/tatumdale/icalBuddy/releases).
-2. Open the DMG and drag **CalendarSync** into your **Applications** folder.
-3. Launch **CalendarSync**. macOS will ask for calendar access on first run — click **Allow**.
-4. The setup UI opens in your browser. Follow the steps to:
+2. Open the DMG. You will be asked to review and accept the licence agreement.
+3. Drag **CalendarSync** onto the **Applications** folder icon to install.
+4. Launch **CalendarSync**. macOS will ask for calendar access on first run — click **Allow**.
+5. The setup UI opens in your browser. Follow the steps to:
    - Choose your source macOS calendar
    - Connect your Google account and pick a destination calendar
    - Set sync interval and save
@@ -62,8 +63,9 @@ See `.env.example` for the full list.
 
 ### Local build
 ```bash
-./packaging/build_app.sh   # Builds CalendarSync.app
-./packaging/build_dmg.sh   # Packages into CalendarSync.dmg
+brew install create-dmg      # For polished DMG layout (optional; falls back to hdiutil)
+./packaging/build_app.sh     # Builds CalendarSync.app
+./packaging/build_dmg.sh     # Packages into CalendarSync.dmg
 ```
 
 The build script will:
@@ -92,8 +94,21 @@ If you run from source (not the `.app`), you may need to grant calendar access t
 ## Security notes
 Never commit: `credentials.json`, `token.json`, `sync_state.json`, `*.log`
 
+## Licence and warranty
+
+CalendarSync is distributed under the **MIT Licence**. The software is provided "as is", without warranty of any kind. See [`packaging/LICENSE_EULA.txt`](packaging/LICENSE_EULA.txt) for the full end-user licence agreement, including warranty disclaimers and limitation of liability.
+
+The EULA is presented when the DMG is first opened; by installing the software you agree to its terms.
+
+## Support
+
+For questions or assistance: **support@tatumdale.com**
+
+Support is provided on a reasonable-efforts basis and does not create any contractual obligation.
+
 ## The MIT License
 
+Copyright (c) 2026 Tatum Dale (CalendarSync)
 Copyright (c) Ali Rantakari (original icalBuddy)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
